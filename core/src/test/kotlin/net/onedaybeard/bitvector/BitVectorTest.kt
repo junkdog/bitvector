@@ -72,8 +72,8 @@ class BitVectorTest {
 
     @Test
     fun `bitwise_operations`() {
-        val a = bitsOf(0, 1, 2, 3, 120, 130)
-        val b = bitsOf(0, 1, 2, 120, 121, 122, 123, 130)
+        val a = bitsOf(0, 1, 2, 3, 120,                130)
+        val b = bitsOf(0, 1, 2,    120, 121, 122, 123, 130)
 
         a.copy().apply {
             and(b)
