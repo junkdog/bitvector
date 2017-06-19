@@ -103,6 +103,7 @@
 
 	<modules>
 		<module>core</module>
+		<module>jvm</module>
 	</modules>
 
 
@@ -134,11 +135,11 @@
 					<artifactId>kotlin-maven-plugin</artifactId>
 					<version>${kotlin.version}</version>
 				</plugin>
-				<plugin>
-					<groupId>org.jetbrains.dokka</groupId>
-					<artifactId>dokka-maven-plugin</artifactId>
-					<version>${dokka.plugin.version}</version>
-				</plugin>
+				<!--<plugin>-->
+					<!--<groupId>org.jetbrains.dokka</groupId>-->
+					<!--<artifactId>dokka-maven-plugin</artifactId>-->
+					<!--<version>${dokka.plugin.version}</version>-->
+				<!--</plugin>-->
 			</plugins>
 		</pluginManagement>
 
