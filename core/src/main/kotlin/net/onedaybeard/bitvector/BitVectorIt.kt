@@ -11,7 +11,7 @@ internal class BitVectorIt(val bv: BitVector) : IntIterator() {
         while (true) {
             if (word != 0) {
                 val t = word and -word
-                val nextBit = wordIdx.bitCapacity() + java.lang.Integer.bitCount(t - 1)
+                val nextBit = wordIdx.bitCapacity() + bitCount(t - 1)
                 word = word xor t
 
                 remaining--
