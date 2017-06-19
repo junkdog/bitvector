@@ -1,8 +1,5 @@
 package net.onedaybeard.bitvector
 
-import java.util.*
-
-
 internal const val WORD_SIZE: Int = 32
 
 /**
@@ -28,7 +25,9 @@ class BitVector : Iterable<Int> {
 
     /** Creates a bit set based off another bit vector. */
     constructor(copyFrom: BitVector) {
-        words = Arrays.copyOf(copyFrom.words, copyFrom.words.size)
+        words = IntArray(copyFrom.words.size)
+        for (i in 0..words.size - 1)
+            words[i] = copyFrom.words[i]
     }
 
     fun copy()  = BitVector(this)
@@ -137,7 +136,7 @@ class BitVector : Iterable<Int> {
         for (word in bits.indices.reversed()) {
             val bitsAtWord = bits[word]
             if (bitsAtWord != 0)
-                return word.bitCapacity() + WORD_SIZE - java.lang.Integer.numberOfLeadingZeros(bitsAtWord)
+                return word.bitCapacity() + WORD_SIZE - leadingZeros(bitsAtWord)
         }
 
         return 0
@@ -157,7 +156,7 @@ class BitVector : Iterable<Int> {
      * @param other a bit set
      */
     fun and(other: BitVector) {
-        val commonWords = Math.min(words.size, other.words.size)
+        val commonWords = minOf(words.size, other.words.size)
         run {
             var i = 0
             while (commonWords > i) {
@@ -184,7 +183,7 @@ class BitVector : Iterable<Int> {
      * @param other a bit set
      */
     fun andNot(other: BitVector) {
-        val commonWords = Math.min(words.size, other.words.size)
+        val commonWords = minOf(words.size, other.words.size)
         var i = 0
         while (commonWords > i) {
             words[i] = words[i] and other.words[i].inv()
@@ -202,7 +201,7 @@ class BitVector : Iterable<Int> {
      * @param other a bit set
      */
     fun or(other: BitVector) {
-        val commonWords = Math.min(words.size, other.words.size)
+        val commonWords = minOf(words.size, other.words.size)
         run {
             var i = 0
             while (commonWords > i) {
@@ -235,7 +234,7 @@ class BitVector : Iterable<Int> {
      * @param other
      */
     fun xor(other: BitVector) {
-        val commonWords = Math.min(words.size, other.words.size)
+        val commonWords = minOf(words.size, other.words.size)
 
         run {
             var i = 0
@@ -267,7 +266,7 @@ class BitVector : Iterable<Int> {
         val bits = this.words
         val otherBits = other.words
         var i = 0
-        val s = Math.min(bits.size, otherBits.size)
+        val s = minOf(bits.size, otherBits.size)
         while (s > i) {
             if (bits[i] and otherBits[i] != 0) {
                 return true
@@ -298,7 +297,7 @@ class BitVector : Iterable<Int> {
         }
 
         var i = 0
-        val s = Math.min(bitsLength, otherBitsLength)
+        val s = minOf(bitsLength, otherBitsLength)
         while (s > i) {
             if (bits[i] and otherBits[i] != otherBits[i]) {
                 return false
@@ -311,7 +310,7 @@ class BitVector : Iterable<Int> {
     fun cardinality(): Int {
         var count = 0
         for (i in words.indices)
-            count += java.lang.Integer.bitCount(words[i])
+            count += bitCount(words[i])
 
         return count
     }
@@ -340,7 +339,7 @@ class BitVector : Iterable<Int> {
         val other = obj as BitVector?
         val otherBits = other!!.words
 
-        val commonWords = Math.min(words.size, otherBits.size)
+        val commonWords = minOf(words.size, otherBits.size)
         var i = 0
         while (commonWords > i) {
             if (words[i] != otherBits[i])
@@ -356,24 +355,16 @@ class BitVector : Iterable<Int> {
 
     override fun toString(): String {
         val cardinality = cardinality()
-        val end = Math.min(128, cardinality)
-        var count = 0
+        val end = minOf(128, cardinality)
 
-        val sb = StringBuilder()
-        sb.append("BitVector[").append(cardinality)
         if (cardinality > 0) {
-            sb.append(": {")
+            val first = "BitVector[$cardinality: {" + take(128).joinToString(separator = ", ")
+            val last = if (cardinality > end) " ...}]" else "}]"
 
-            val taken = take(128)
-            sb.append(taken.joinToString(separator = ", "))
-
-            if (cardinality > end)
-                sb.append(" ...")
-
-            sb.append("}")
+            return first + last
+        } else {
+            return "BitVector[]"
         }
-        sb.append("]")
-        return sb.toString()
     }
 
     fun forEachBit(f: (Int) -> Unit): Unit {
@@ -382,7 +373,7 @@ class BitVector : Iterable<Int> {
             var bitset = words[index]
             while (bitset != 0) {
                 val t = bitset and -bitset
-                f(offset + java.lang.Integer.bitCount(t - 1))
+                f(offset + bitCount(t - 1))
                 bitset = bitset xor t
             }
 
