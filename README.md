@@ -27,15 +27,18 @@ assert(142 !in bv)
 
 
 #### or, and, andNot, xor
-As with `java.util.BitSet`, these operations mutates the callee. Do a `copy()` if the original BitVector needs to be around.
+As with `java.util.BitSet`, these operations mutate the callee. Do a `copy()` if the original BitVector needs to be around.
 
-These functions are not infix functions, as the syntax would suggest a value copy.
+These functions are not infix functions, as such syntax would suggest a value copy.
   
 ```kotlin
 val a = bitsOf(0, 1, 2, 3, 120,                130)
 val b = bitsOf(0, 1, 2,    120, 121, 122, 123, 130)
 
 assert(a.and(b) == bitsOf(0, 1, 2, 120, 130))
+
+// caveat: bitvector was mutated above
+assert(a == bitsOf(0, 1, 2, 120, 130))
 ```
 
 
