@@ -2,15 +2,16 @@
 
 package net.onedaybeard.bitvector
 
-fun bitCount(bits: Int): Int {
+internal fun bitCount(bits: Int): Int {
     return Integer.bitCount(bits)
 }
 
-fun leadingZeros(bits: Int): Int {
-    if (bits == 0)
-        return 32
-    if ((bits ushr 31) == 1)
-        return 0
+// ref https://graphics.stanford.edu/~seander/bithacks.html#IntegerLog
+internal fun leadingZeros(bits: Int): Int {
+    when {
+        0 == bits         -> return 32
+        1 == bits ushr 31 -> return 0
+    }
 
     var v = bits
     var r = 0
