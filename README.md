@@ -4,8 +4,9 @@
 
 - Uncompressed, dynamically resizeable bitset, similar to `java.util.BitSet`
 - Compatible with JavaScript and JVM backends
+  - 4 byte words, avoids [`Long` emulation][long-emu] in js
 
-
+ [long-emu]: https://kotlinlang.org/docs/reference/js-to-kotlin-interop.html#representing-kotlin-types-in-javascript 
 
 ## The gist
 
@@ -15,19 +16,19 @@ val bv: BitVector = bitsOf(1, 2, 56, 64, 128, 129, 130, 131, 420)
 ```
 
 
-#### individual bits
+#### Individual bits
 ```kotlin
 val bv = BitVector()
-bv[142] = true // or bv.set(14)
+bv[142] = true // or bv.set(142)
 assert(142 in bv)
 
-bv.clear(142)  // or bv.set(14, false)
+bv.clear(142)  // or bv[142] = false
 assert(142 !in bv)
 ```
 
 
-#### or, and, andNot, xor
-As with `java.util.BitSet`, these operations mutate the callee. Do a `copy()` if the original BitVector needs to be around.
+#### `or`, `and`, `andNot`, `xor`
+As with `java.util.BitSet`, these operations mutate the callee. Do a `copy()` if the original BitVector needs to stick around.
 
 These functions are not infix functions, as such syntax would suggest a value copy.
   
