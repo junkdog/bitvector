@@ -11,23 +11,11 @@
 	<packaging>jar</packaging>
 	<name>bitvector-js</name>
 
-
-	<properties>
-		<apidocs.path>${project.basedir}/target/dokka</apidocs.path>
-	</properties>
-
 	<dependencies>
 		<!-- core deps -->
 		<dependency>
 			<groupId>org.jetbrains.kotlin</groupId>
 			<artifactId>kotlin-stdlib-jre8</artifactId>
-			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>net.onedaybeard.bitvector</groupId>
-			<artifactId>bitvector</artifactId>
-			<version>${project.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -67,40 +55,6 @@
 
 		<plugins>
 			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.2</version>
-				<configuration>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
-					<useReleaseProfile>false</useReleaseProfile>
-					<releaseProfiles>release</releaseProfiles>
-					<goals>deploy</goals>
-					<tagNameFormat>bitvector-@{project.version}</tagNameFormat>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-source-plugin</artifactId>
-				<version>3.0.1</version>
-				<executions>
-					<execution>
-						<id>attach-sources</id>
-						<phase>package</phase>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-maven-plugin</artifactId>
 				<version>${kotlin.version}</version>
@@ -117,7 +71,6 @@
 								<sourceDir>src/main/kotlin</sourceDir>
 							</sourceDirs>
 						</configuration>
-
 					</execution>
 					<execution>
 						<id>test-compile</id>
@@ -134,106 +87,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!--<plugin>-->
-				<!--<groupId>org.jetbrains.dokka</groupId>-->
-				<!--<artifactId>dokka-maven-plugin</artifactId>-->
-				<!--<version>${dokka.plugin.version}</version>-->
-				<!--<executions>-->
-					<!--<execution>-->
-						<!--<phase>prepare-package</phase>-->
-						<!--<goals>-->
-							<!--<goal>dokka</goal>-->
-							<!--<goal>javadocJar</goal>-->
-						<!--</goals>-->
-					<!--</execution>-->
-				<!--</executions>-->
-				<!--<configuration>-->
-					<!--<moduleName>${project.artifactId}-${project.version}</moduleName>-->
-					<!--<outputDir>${apidocs.path}</outputDir>-->
-					<!--<samplesDirs>-->
-						<!--<samplesDir>${project.basedir}/src/test/kotlin</samplesDir>-->
-					<!--</samplesDirs>-->
-					<!--<outputFormat>html</outputFormat>-->
-					<!--<sourceLinks>-->
-						<!--<link>-->
-							<!--<dir>${project.basedir}/src/main/kotlin</dir>-->
-							<!--<url>https://github.com/junkdog/bitvector-kotlin/blob/master/src/main/kotlin</url>-->
-						<!--</link>-->
-					<!--</sourceLinks>-->
-					<!--<skip>${dokka.skip}</skip>-->
-				<!--</configuration>-->
-			<!--</plugin>-->
 		</plugins>
 	</build>
-
-	<profiles>
-		<profile>
-			<id>docs</id>
-			<properties>
-				<dokka.skip>false</dokka.skip>
-			</properties>
-		</profile>
-		<profile>
-			<id>release</id>
-			<properties>
-				<dokka.skip>false</dokka.skip>
-			</properties>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.6</version>
-						<executions>
-							<execution>
-								<id>sign-artifacts</id>
-								<phase>verify</phase>
-								<goals>
-									<goal>sign</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-source-plugin</artifactId>
-						<version>3.0.1</version>
-						<executions>
-							<execution>
-								<id>attach-sources</id>
-								<phase>generate-resources</phase>
-								<goals>
-									<goal>jar-no-fork</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>2.10.3</version>
-						<executions>
-							<execution>
-								<id>attach-javadocs</id>
-								<goals>
-									<goal>jar</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.sonatype.plugins</groupId>
-						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.6.3</version>
-						<extensions>true</extensions>
-						<configuration>
-							<serverId>sonatype-nexus-staging</serverId>
-							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-							<autoReleaseAfterClose>true</autoReleaseAfterClose>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
 </project>

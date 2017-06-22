@@ -22,6 +22,17 @@
 		<dokka.skip>true</dokka.skip>
 	</properties>
 
+	<pluginRepositories>
+		<pluginRepository>
+			<id>jcenter</id>
+			<name>JCenter</name>
+			<url>https://jcenter.bintray.com/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<scm>
 		<url>https://github.com/junkdog/bitvector/</url>
 		<connection>scm:git:git@github.com:junkdog/bitvector.git</connection>
@@ -101,13 +112,6 @@
 		</developer>
 	</developers>
 
-	<modules>
-		<module>core</module>
-		<module>jvm</module>
-		<module>js</module>
-	</modules>
-
-
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -132,15 +136,10 @@
 					<version>${kotlin.version}</version>
 				</plugin>
 				<plugin>
-					<groupId>org.jetbrains.kotlin</groupId>
-					<artifactId>kotlin-maven-plugin</artifactId>
-					<version>${kotlin.version}</version>
+					<groupId>org.jetbrains.dokka</groupId>
+					<artifactId>dokka-maven-plugin</artifactId>
+					<version>${dokka.plugin.version}</version>
 				</plugin>
-				<!--<plugin>-->
-					<!--<groupId>org.jetbrains.dokka</groupId>-->
-					<!--<artifactId>dokka-maven-plugin</artifactId>-->
-					<!--<version>${dokka.plugin.version}</version>-->
-				<!--</plugin>-->
 			</plugins>
 		</pluginManagement>
 
@@ -167,9 +166,21 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
+	<modules>
+		<module>jvm</module>
+		<module>js</module>
+	</modules>
 
 	<profiles>
+		<profile>
+			<id>fulldev</id>
+			<modules>
+				<module>core</module>
+				<module>jvm</module>
+				<module>js</module>
+			</modules>
+		</profile>
 		<profile>
 			<id>docs</id>
 			<properties>
