@@ -1,5 +1,3 @@
-@file:JvmName("Platform")
-
 package net.onedaybeard.bitvector
 
 // ref https://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetParallel

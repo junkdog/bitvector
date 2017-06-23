@@ -15,11 +15,16 @@
 		<!-- core deps -->
 		<dependency>
 			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-stdlib-jre8</artifactId>
-			<scope>provided</scope>
+			<artifactId>kotlin-stdlib-js</artifactId>
+			<version>${kotlin.version}</version>
 		</dependency>
 
 		<!-- test deps -->
+		<dependency>
+			<groupId>org.jetbrains.kotlin</groupId>
+			<artifactId>kotlin-stdlib-jre8</artifactId>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -63,7 +68,7 @@
 						<id>compile</id>
 						<phase>compile</phase>
 						<goals>
-							<goal>compile</goal>
+							<goal>js</goal>
 						</goals>
 						<configuration>
 							<sourceDirs>
@@ -72,21 +77,88 @@
 							</sourceDirs>
 						</configuration>
 					</execution>
+					<!--<execution>-->
+						<!--<id>test-compile</id>-->
+						<!--<phase>test-compile</phase>-->
+						<!--<goals>-->
+							<!--<goal>test-compile</goal>-->
+						<!--</goals>-->
+						<!--<configuration>-->
+							<!--<sourceDirs>-->
+								<!--<sourceDir>${project.basedir}/../core/src/test/kotlin</sourceDir>-->
+								<!--<sourceDir>src/test/kotlin</sourceDir>-->
+							<!--</sourceDirs>-->
+						<!--</configuration>-->
+					<!--</execution>-->
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
 					<execution>
-						<id>test-compile</id>
-						<phase>test-compile</phase>
+						<id>unpack</id>
+						<phase>compile</phase>
 						<goals>
-							<goal>test-compile</goal>
+							<goal>unpack</goal>
 						</goals>
 						<configuration>
-							<sourceDirs>
-								<sourceDir>${project.basedir}/../core/src/test/kotlin</sourceDir>
-								<sourceDir>src/test/kotlin</sourceDir>
-							</sourceDirs>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.jetbrains.kotlin</groupId>
+									<artifactId>kotlin-stdlib-js</artifactId>
+									<version>${kotlin.version}</version>
+									<outputDirectory>${project.build.directory}/js/lib</outputDirectory>
+									<includes>*.js</includes>
+								</artifactItem>
+							</artifactItems>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
 		</plugins>
 	</build>
+
+	<profiles>
+		<profile>
+			<id>impltest</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.jetbrains.kotlin</groupId>
+						<artifactId>kotlin-maven-plugin</artifactId>
+						<version>${kotlin.version}</version>
+						<executions>
+							<execution>
+								<id>compile</id>
+								<phase>compile</phase>
+								<goals>
+									<goal>compile</goal>
+								</goals>
+								<configuration>
+									<sourceDirs>
+										<sourceDir>${project.basedir}/../core/src/main/kotlin</sourceDir>
+										<sourceDir>src/main/kotlin</sourceDir>
+									</sourceDirs>
+								</configuration>
+							</execution>
+							<execution>
+								<id>test-compile</id>
+								<phase>test-compile</phase>
+								<goals>
+									<goal>test-compile</goal>
+								</goals>
+								<configuration>
+									<sourceDirs>
+										<sourceDir>${project.basedir}/../core/src/test/kotlin</sourceDir>
+										<sourceDir>src/test/kotlin</sourceDir>
+									</sourceDirs>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>

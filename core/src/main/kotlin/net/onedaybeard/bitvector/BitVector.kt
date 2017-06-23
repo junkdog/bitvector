@@ -121,7 +121,8 @@ class BitVector : Iterable<Int> {
 
     /** Clears the entire bitset  */
     fun clear() {
-        words.fill(0)
+        for (i in words.indices)
+            words[i] = 0
     }
 
     /**
@@ -333,8 +334,8 @@ class BitVector : Iterable<Int> {
             return true
         if (obj == null)
             return false
-        if (javaClass != obj.javaClass)
-            return false
+//        if (javaClass != obj.javaClass)
+//            return false
 
         val other = obj as BitVector?
         val otherBits = other!!.words
