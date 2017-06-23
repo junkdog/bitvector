@@ -334,8 +334,8 @@ class BitVector : Iterable<Int> {
             return true
         if (obj == null)
             return false
-//        if (javaClass != obj.javaClass)
-//            return false
+        if (this::class != obj::class)
+            return false
 
         val other = obj as BitVector?
         val otherBits = other!!.words
