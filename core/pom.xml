@@ -7,7 +7,7 @@
 		<artifactId>bitvector-parent</artifactId>
 		<version>0.1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>bitvector</artifactId>
+	<artifactId>bitvector-core</artifactId>
 	<packaging>jar</packaging>
 	<name>bitvector-core</name>
 
@@ -23,15 +23,22 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.jetbrains.kotlin</groupId>
 			<artifactId>kotlin-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.jetbrains.kotlin</groupId>-->
+			<!--<artifactId>kotlin-test-junit</artifactId>-->
+			<!--<version>${kotlin.version}</version>-->
+			<!--<scope>test</scope>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>org.jetbrains.kotlin</groupId>-->
+			<!--<artifactId>kotlin-test-common</artifactId>-->
+			<!--<version>${kotlin.version}</version>-->
+			<!--<scope>test</scope>-->
+		<!--</dependency>-->
 	</dependencies>
 
 	<build>

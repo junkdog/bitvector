@@ -9,7 +9,7 @@ import kotlin.test.fail
 
 class BitVectorTest {
     @Test
-    fun `test equality`() {
+    fun test_equality() {
         bitsOf(
             1, 2, 4, 1230, 1323, 1324
         ) assertEquals bitsOf(1, 2, 4, 1230, 1323, 1324)
@@ -21,7 +21,7 @@ class BitVectorTest {
     }
 
     @Test
-    fun `get and set`() {
+    fun get_and_set() {
         val bv = BitVector()
         bv[0] = true
         bv[2] = true
@@ -39,7 +39,7 @@ class BitVectorTest {
     }
 
     @Test
-    fun `pushing bits to function | faster iterator alternative`() {
+    fun pushing_bits_to_function_faster_iterator_alternative() {
         val bv = bitsOf(1, 2, 56, 64, 128, 129, 130, 131, 420)
         val other = BitVector()
 
@@ -48,7 +48,7 @@ class BitVectorTest {
     }
 
     @Test
-    fun `fill then clear`() {
+    fun fill_then_clear() {
         val bv = bitsOf(23, 4, 5, 123, 467, 10)
         assertFalse(bv.isEmpty)
         bv.clear()
@@ -59,7 +59,7 @@ class BitVectorTest {
     }
 
     @Test
-    fun `fundamental bitwise checks`() {
+    fun fundamental_bitwise_checks() {
         val bits: BitVector = bitsOf(0, 1, 2, 3, 7, 8, 9)
 
         assertTrue((bitsOf(1, 8, 9) in bits))
@@ -71,7 +71,7 @@ class BitVectorTest {
     }
 
     @Test
-    fun `bitwise_operations`() {
+    fun bitwise_operations() {
         val a = bitsOf(0, 1, 2, 3, 120,                130)
         val b = bitsOf(0, 1, 2,    120, 121, 122, 123, 130)
 
