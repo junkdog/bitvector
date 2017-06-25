@@ -18,75 +18,15 @@
 			<artifactId>kotlin-stdlib-js</artifactId>
 		</dependency>
 
-		<!-- test deps -->
-		<dependency>
-			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-stdlib-jre8</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-test-junit</artifactId>
-			<version>${kotlin.version}</version>
-			<scope>test</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.jetbrains.kotlin</groupId>
 			<artifactId>kotlin-test-js</artifactId>
-			<version>${kotlin.version}</version>
-			<!--<optional>true</optional>-->
-			<scope>test</scope>
-		</dependency>
-		<!--<dependency>-->
-			<!--<groupId>org.jetbrains.kotlin</groupId>-->
-			<!--<artifactId>kotlin-test</artifactId>-->
-			<!--<optional>true</optional>-->
-			<!--<version>${kotlin.version}</version>-->
-		<!--</dependency>-->
-		<dependency>
-			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-test-common</artifactId>
-			<version>${kotlin.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.jetbrains.kotlin</groupId>
-				<artifactId>kotlin-maven-plugin</artifactId>
-				<version>${kotlin.version}</version>
-				<executions>
-					<execution>
-						<id>compile</id>
-						<phase>compile</phase>
-						<goals>
-							<goal>js</goal>
-						</goals>
-						<configuration>
-							<outputFile>${project.build.outputDirectory}/bitvector.js</outputFile>
-							<sourceDirs>
-								<sourceDir>${project.basedir}/../core/src/main/kotlin</sourceDir>
-								<sourceDir>src/main/kotlin</sourceDir>
-							</sourceDirs>
-						</configuration>
-					</execution>
-					<execution>
-						<id>test-compile</id>
-						<phase>test-compile</phase>
-						<goals>
-							<goal>test-js</goal>
-						</goals>
-						<configuration>
-							<sourceDirs>
-								<sourceDir>${project.basedir}/../core/src/test/kotlin</sourceDir>
-								<!--<sourceDir>src/test/kotlin</sourceDir>-->
-							</sourceDirs>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
@@ -103,84 +43,92 @@
 									<groupId>org.jetbrains.kotlin</groupId>
 									<artifactId>kotlin-stdlib-js</artifactId>
 									<version>${kotlin.version}</version>
-									<outputDirectory>${project.build.directory}/js/lib</outputDirectory>
+									<outputDirectory>${project.build.directory}/test-classes/lib</outputDirectory>
 									<includes>*.js</includes>
 								</artifactItem>
 							</artifactItems>
 						</configuration>
 					</execution>
 					<execution>
+						<id>unpack-test</id>
 						<goals>
 							<goal>unpack-dependencies</goal>
 						</goals>
 						<phase>test-compile</phase>
 						<configuration>
 							<includeScope>test</includeScope>
-							<excludeArtifactIds>kotlinx-html-common</excludeArtifactIds>
+							<!--<excludeArtifactIds>kotlinx-html-common</excludeArtifactIds>-->
 							<includeTypes>jar</includeTypes>
-							<outputDirectory>${project.basedir}/target/test-js</outputDirectory>
+							<outputDirectory>${project.basedir}/target/test-classes/lib</outputDirectory>
 							<includes>*.js</includes>
 							<excludes>*.meta.js</excludes>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>com.github.eirslett</groupId>
-				<artifactId>frontend-maven-plugin</artifactId>
-				<version>1.3</version>
-
-				<executions>
-					<execution>
-						<id>install node and npm</id>
-						<phase>generate-test-resources</phase>
-						<goals>
-							<goal>install-node-and-npm</goal>
-						</goals>
-						<configuration>
-							<skip>${maven.test.skip}</skip>
-						</configuration>
-					</execution>
-
-					<execution>
-						<id>npm install</id>
-						<phase>generate-test-resources</phase>
-						<goals>
-							<goal>npm</goal>
-						</goals>
-						<!-- Optional configuration which provides for running any npm command -->
-						<configuration>
-							<arguments>install</arguments>
-							<skip>${maven.test.skip}</skip>
-						</configuration>
-					</execution>
-
-					<execution>
-						<id>javascript tests</id>
-						<goals>
-							<goal>karma</goal>
-						</goals>
-						<configuration>
-							<karmaConfPath>${project.basedir}/src/test/karma/karma.conf.js</karmaConfPath>
-							<skip>${maven.test.skip}</skip>
-							<skipTests>${maven.test.skip}</skipTests>
-						</configuration>
-					</execution>
-				</executions>
-
-				<configuration>
-					<nodeVersion>v0.12.17</nodeVersion>
-					<npmVersion>3.10.9</npmVersion>
-
-					<workingDirectory>${project.basedir}/src/test/karma</workingDirectory>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 
 	<profiles>
 		<profile>
+			<id>default</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.jetbrains.kotlin</groupId>
+						<artifactId>kotlin-maven-plugin</artifactId>
+						<version>${kotlin.version}</version>
+						<executions>
+							<execution>
+								<id>compile</id>
+								<phase>compile</phase>
+								<goals>
+									<goal>js</goal>
+								</goals>
+								<configuration>
+									<outputFile>${project.build.outputDirectory}/bitvector.js</outputFile>
+									<sourceDirs>
+										<sourceDir>${project.basedir}/../core/src/main/kotlin</sourceDir>
+										<sourceDir>src/main/kotlin</sourceDir>
+									</sourceDirs>
+								</configuration>
+							</execution>
+							<execution>
+								<id>test-compile</id>
+								<phase>test-compile</phase>
+								<goals>
+									<goal>test-js</goal>
+								</goals>
+								<configuration>
+									<sourceDirs>
+										<sourceDir>${project.basedir}/../core/src/test/kotlin</sourceDir>
+										<!--<sourceDir>src/test/kotlin</sourceDir>-->
+									</sourceDirs>
+								</configuration>
+							</execution>
+						</executions>
+						<configuration>
+							<sourceMap>true</sourceMap>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
 			<id>impltest</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.jetbrains.kotlin</groupId>
+					<artifactId>kotlin-stdlib-jre8</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>org.jetbrains.kotlin</groupId>
+					<artifactId>kotlin-test</artifactId>
+				</dependency>
+			</dependencies>
 			<build>
 				<plugins>
 					<plugin>
@@ -209,7 +157,7 @@
 								</goals>
 								<configuration>
 									<sourceDirs>
-										<!--<sourceDir>${project.basedir}/../core/src/test/kotlin</sourceDir>-->
+										<sourceDir>${project.basedir}/../core/src/test/kotlin</sourceDir>
 										<sourceDir>src/test/kotlin</sourceDir>
 									</sourceDirs>
 								</configuration>

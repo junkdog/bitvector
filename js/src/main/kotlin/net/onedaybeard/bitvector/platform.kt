@@ -6,7 +6,7 @@ internal fun bitCount(bits: Int): Int {
 
     v -= (v ushr 1 and 0x55555555)
     v = (v and 0x33333333) + (v ushr 2 and 0x33333333)
-    return (v + (v ushr 4) and 0xF0F0F0F) * 0x1010101 ushr 24
+    return (v + (v ushr 4) and 0xf0f0f0f) * 0x1010101 ushr 24
 }
 
 

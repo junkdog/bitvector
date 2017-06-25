@@ -63,3 +63,14 @@ bitsOf(*bits).forEach { println("bit $it says hi") }
 
 
 ## Benchmarks / iteration
+
+
+## Tests
+
+#### Verifying platform-specific implementations
+```
+mvn clean install -P impltest
+```
+
+#### Running JS tests
+Build project, `mvn clean install`, then point the browser to `file://$PROJECT_ROOT/js/target/test-classes/index.html`
