@@ -187,12 +187,23 @@
 		</plugins>
 	</build>
 
-	<modules>
-		<module>jvm</module>
-		<module>js</module>
-	</modules>
-
 	<profiles>
+		<profile>
+			<id>default</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<modules>
+				<module>jvm</module>
+				<module>js</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>benchmarks</id>
+			<modules>
+				<module>jvm-benchmarks</module>
+			</modules>
+		</profile>
 		<profile>
 			<id>fulldev</id>
 			<modules>
