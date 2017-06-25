@@ -1,7 +1,7 @@
 package net.onedaybeard.bitvector
 
 // ref https://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetParallel
-internal fun bitCount(bits: Int): Int {
+fun bitCount(bits: Int): Int {
     var v = bits
 
     v -= (v ushr 1 and 0x55555555)
@@ -11,7 +11,7 @@ internal fun bitCount(bits: Int): Int {
 
 
 // ref https://graphics.stanford.edu/~seander/bithacks.html#IntegerLog
-internal fun leadingZeros(bits: Int): Int {
+fun leadingZeros(bits: Int): Int {
     if (0 == bits) return 32
 
     var v = bits

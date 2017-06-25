@@ -6,5 +6,5 @@ fun bitsOf(vararg bits: Int) : BitVector {
 
 operator fun Int.contains(bv: BitVector) : Boolean = bv[this]
 
-internal fun Int.toWordIdx() = this ushr 5
-internal fun Int.bitCapacity() = this shl 5
+internal inline fun Int.toWordIdx() = this ushr 5
+internal inline fun Int.bitCapacity() = this shl 5

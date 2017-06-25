@@ -1,6 +1,6 @@
 package net.onedaybeard.bitvector
 
-internal const val WORD_SIZE: Int = 32
+const val WORD_SIZE: Int = 32
 
 /**
  *
@@ -368,7 +368,7 @@ class BitVector : Iterable<Int> {
         }
     }
 
-    fun forEachBit(f: (Int) -> Unit): Unit {
+    inline fun forEachBit(f: (Int) -> Unit): Unit {
         var offset = 0
         for (index in words.indices) {
             var bitset = words[index]
