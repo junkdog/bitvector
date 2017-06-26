@@ -369,16 +369,13 @@ class BitVector : Iterable<Int> {
     }
 
     inline fun forEachBit(f: (Int) -> Unit): Unit {
-        var offset = 0
         for (index in words.indices) {
             var bitset = words[index]
             while (bitset != 0) {
                 val t = bitset and -bitset
-                f(offset + bitCount(t - 1))
+                f((32 * index) + bitCount(t - 1))
                 bitset = bitset xor t
             }
-
-            offset += WORD_SIZE
         }
     }
 }
