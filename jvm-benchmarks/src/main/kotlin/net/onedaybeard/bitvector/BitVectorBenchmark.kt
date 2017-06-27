@@ -70,6 +70,18 @@ open class BitVectorBenchmark {
     }
 
     @Benchmark
+    fun bitvector_foreach_bit_intbag_direct(): IntBag {
+        val out = ids
+        out.setSize(0)
+
+        bv.forEachBit(out)
+//        for (bit in bv)
+//            out.add(bit)
+
+        return out
+    }
+
+    @Benchmark
     fun bitvector_foreach_intbag(): IntBag {
         val out = ids
         out.setSize(0)
@@ -86,5 +98,16 @@ open class BitVectorBenchmark {
                 .include(".*bitvector.*to.*")
                 .build()
               ).run()
+    }
+}
+
+fun BitVector.forEachBit(out: IntBag): Unit {
+    for (index in words.indices) {
+        var bitset = words[index]
+        while (bitset != 0) {
+            val t = bitset and -bitset
+            bitset = bitset xor t
+            out.add((index shl 5) + bitCount(t - 1))
+        }
     }
 }

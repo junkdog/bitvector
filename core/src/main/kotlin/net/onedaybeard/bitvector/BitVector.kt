@@ -373,8 +373,8 @@ class BitVector : Iterable<Int> {
             var bitset = words[index]
             while (bitset != 0) {
                 val t = bitset and -bitset
-                f((32 * index) + bitCount(t - 1))
                 bitset = bitset xor t
+                f((index shl 5) + bitCount(t - 1))
             }
         }
     }
