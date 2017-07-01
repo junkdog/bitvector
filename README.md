@@ -63,9 +63,7 @@ bitsOf(*bits).forEach { println("bit $it says hi") }
 
 ## Getting Started
 
-bitvector-js`
-
-#### Maven
+#### Maven: JVM/Android
 
 ```xml
 <dependency>
@@ -75,7 +73,7 @@ bitvector-js`
 </dependency>
 ```
 
-or, javascript:
+#### Maven: JavaScript
 
 ```xml
 <dependency>
@@ -85,11 +83,13 @@ or, javascript:
 </dependency>
 ```
 
-#### Gradle
+#### Gradle: JVM/Android
 
 ```groovy
   dependencies { compile "net.onedaybeard.bitvector:bitvector-jvm:0.1.0" }
 ```
+
+#### Gradle: JavaScript
 
 ```groovy
   dependencies { compile "net.onedaybeard.bitvector:bitvector-js:0.1.0" }
