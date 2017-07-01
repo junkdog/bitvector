@@ -3,12 +3,13 @@
 ## BitVector
 
 - Uncompressed, dynamically resizeable bitset, similar to `java.util.BitSet`
-- Fast-ish (JS not yet profiled) 
+- [Fast-ish][bench] enumeration of set bits (JS not yet profiled) 
 - Compatible with JavaScript and JVM/Android backends
   - 4 byte words, avoids [`Long` emulation][long-emu] in js
 
  [long-emu]: https://kotlinlang.org/docs/reference/js-to-kotlin-interop.html#representing-kotlin-types-in-javascript 
-
+ [bench]: https://github.com/junkdog/bitvector#jvm-benchmarks--enumerating-set-bits
+ 
 ## The gist
 
 #### Constructing
