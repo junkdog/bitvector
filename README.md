@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/junkdog/transducers-kotlin.svg)](https://travis-ci.org/junkdog/bitvector)
+[![Build Status](https://travis-ci.org/junkdog/bitvector.svg)](https://travis-ci.org/junkdog/bitvector)
 
 ## BitVector
 
@@ -60,6 +60,41 @@ bitsOf(*bits).forEachBit { println("bit $it says hi") }
 // can be combined with filter/map etc
 bitsOf(*bits).forEach { println("bit $it says hi") }
 ```
+
+## Getting Started
+
+bitvector-js`
+
+#### Maven
+
+```xml
+<dependency>
+	<groupId>net.onedaybeard.bitvector</groupId>
+	<artifactId>bitvector-jvm</artifactId>
+	<version>0.1.0</version>
+</dependency>
+```
+
+or, javascript:
+
+```xml
+<dependency>
+	<groupId>net.onedaybeard.bitvector</groupId>
+	<artifactId>bitvector-js</artifactId>
+	<version>0.1.0</version>
+</dependency>
+```
+
+#### Gradle
+
+```groovy
+  dependencies { compile "net.onedaybeard.bitvector:bitvector-jvm:0.1.0" }
+```
+
+```groovy
+  dependencies { compile "net.onedaybeard.bitvector:bitvector-js:0.1.0" }
+```
+
 
 ## JVM Benchmarks / enumerating set bits
 
