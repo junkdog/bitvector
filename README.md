@@ -3,7 +3,8 @@
 ## BitVector
 
 - Uncompressed, dynamically resizeable bitset, similar to `java.util.BitSet`
-- Compatible with JavaScript and JVM backends
+- Fast-ish (JS not yet profiled) 
+- Compatible with JavaScript and JVM/Android backends
   - 4 byte words, avoids [`Long` emulation][long-emu] in js
 
  [long-emu]: https://kotlinlang.org/docs/reference/js-to-kotlin-interop.html#representing-kotlin-types-in-javascript 
@@ -100,7 +101,7 @@ bitsOf(*bits).forEach { println("bit $it says hi") }
 
 Translating bit positions into integer, inserting each into an `IntBag` (thin wrapper around `int[]`).
  
-[artemis-odb](https://github.com/junkdog/artemis-odb)'s `BitVector` was the basis for this implementation. The benchmark setup favors the artemis implementation, as it provides an implementation translating bits to `IntBag`: it serves as a reference for best possible performance.
+[artemis-odb](https://github.com/junkdog/artemis-odb)'s `BitVector` was the basis for this implementation. The benchmark setup favors the artemis implementation, as it provides an optimized `toIntBag` method: it serves as a reference for best possible performance.
 
 See [jmh-logs](https://github.com/junkdog/bitvector/tree/master/jmh-logs) for the full logs.
 
