@@ -61,8 +61,21 @@ bitsOf(*bits).forEachBit { println("bit $it says hi") }
 bitsOf(*bits).forEach { println("bit $it says hi") }
 ```
 
+## JVM Benchmarks / enumerating set bits
 
-## Benchmarks / iteration
+Translating bit positions into integer, inserting each into an `IntBag` (thin wrapper around int[]).
+ 
+[artemis-odb](https://github.com/junkdog/artemis-odb)'s `BitVector` was the basis for this implementation. The benchmark setup favors the artemis implementation, as it provides an implementation translating bits to `IntBag`: it serves as a reference for best possible performance.
+
+See [jmh-logs](https://github.com/junkdog/bitvector/tree/master/jmh-logs) for the full logs.
+
+![benchmark.png](https:///raw.githubusercontent.com/junkdog/bitvector/tree/master/benchmark.png)
+
+Discrepancy to artemis' `BitVector` is unwelcome. The implementation is for the most part the same, except that this implementation uses `int` for words, instead of `long`. 4 or 8 byte words did not have a significant impact on performance.
+
+The for loop benchmark performs poorly due to all the `Integer` boxing, extra indirection and allocation, compared to `forEachBit`.   
+
+`java.util.BitSet` suffers from not having a way of enumerating all bits at once, instead relying on repeatedly calling `nextSetBit()`. 
 
 
 ## Tests
