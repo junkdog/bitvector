@@ -1,0 +1,1555 @@
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag
+# Parameters: (fillRate = .01)
+
+# Run progress: 0.00% complete, ETA 00:06:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 7018.794 ops/ms
+# Warmup Iteration   2: 7150.223 ops/ms
+# Warmup Iteration   3: 6868.757 ops/ms
+Iteration   1: 6853.749 ops/ms
+Iteration   2: 6877.037 ops/ms
+Iteration   3: 6844.967 ops/ms
+Iteration   4: 6805.406 ops/ms
+Iteration   5: 6869.864 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag":
+  6850.205 ±(99.9%) 108.117 ops/ms [Average]
+  (min, avg, max) = (6805.406, 6850.205, 6877.037), stdev = 28.078
+  CI (99.9%): [6742.088, 6958.322] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag
+# Parameters: (fillRate = .05)
+
+# Run progress: 2.00% complete, ETA 00:06:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 2544.510 ops/ms
+# Warmup Iteration   2: 2585.423 ops/ms
+# Warmup Iteration   3: 2606.084 ops/ms
+Iteration   1: 2569.272 ops/ms
+Iteration   2: 2588.443 ops/ms
+Iteration   3: 2617.843 ops/ms
+Iteration   4: 2586.760 ops/ms
+Iteration   5: 2583.228 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag":
+  2589.109 ±(99.9%) 68.334 ops/ms [Average]
+  (min, avg, max) = (2569.272, 2589.109, 2617.843), stdev = 17.746
+  CI (99.9%): [2520.775, 2657.443] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag
+# Parameters: (fillRate = .10)
+
+# Run progress: 4.00% complete, ETA 00:06:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 1859.733 ops/ms
+# Warmup Iteration   2: 1885.305 ops/ms
+# Warmup Iteration   3: 1878.078 ops/ms
+Iteration   1: 1893.011 ops/ms
+Iteration   2: 1887.327 ops/ms
+Iteration   3: 1892.182 ops/ms
+Iteration   4: 1893.032 ops/ms
+Iteration   5: 1822.143 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag":
+  1877.539 ±(99.9%) 119.593 ops/ms [Average]
+  (min, avg, max) = (1822.143, 1877.539, 1893.032), stdev = 31.058
+  CI (99.9%): [1757.946, 1997.132] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag
+# Parameters: (fillRate = .20)
+
+# Run progress: 6.00% complete, ETA 00:06:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 1088.097 ops/ms
+# Warmup Iteration   2: 1062.039 ops/ms
+# Warmup Iteration   3: 947.454 ops/ms
+Iteration   1: 939.547 ops/ms
+Iteration   2: 947.425 ops/ms
+Iteration   3: 947.464 ops/ms
+Iteration   4: 943.285 ops/ms
+Iteration   5: 946.762 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag":
+  944.897 ±(99.9%) 13.295 ops/ms [Average]
+  (min, avg, max) = (939.547, 944.897, 947.464), stdev = 3.453
+  CI (99.9%): [931.602, 958.191] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag
+# Parameters: (fillRate = .40)
+
+# Run progress: 8.00% complete, ETA 00:06:18
+# Fork: 1 of 1
+# Warmup Iteration   1: 644.339 ops/ms
+# Warmup Iteration   2: 651.747 ops/ms
+# Warmup Iteration   3: 665.138 ops/ms
+Iteration   1: 666.393 ops/ms
+Iteration   2: 665.195 ops/ms
+Iteration   3: 666.657 ops/ms
+Iteration   4: 666.680 ops/ms
+Iteration   5: 661.561 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag":
+  665.297 ±(99.9%) 8.378 ops/ms [Average]
+  (min, avg, max) = (661.561, 665.297, 666.680), stdev = 2.176
+  CI (99.9%): [656.920, 673.675] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag
+# Parameters: (fillRate = .50)
+
+# Run progress: 10.00% complete, ETA 00:06:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 530.552 ops/ms
+# Warmup Iteration   2: 542.279 ops/ms
+# Warmup Iteration   3: 538.687 ops/ms
+Iteration   1: 542.264 ops/ms
+Iteration   2: 542.393 ops/ms
+Iteration   3: 541.362 ops/ms
+Iteration   4: 542.306 ops/ms
+Iteration   5: 545.219 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag":
+  542.709 ±(99.9%) 5.638 ops/ms [Average]
+  (min, avg, max) = (541.362, 542.709, 545.219), stdev = 1.464
+  CI (99.9%): [537.071, 548.346] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag
+# Parameters: (fillRate = .60)
+
+# Run progress: 12.00% complete, ETA 00:06:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 450.928 ops/ms
+# Warmup Iteration   2: 455.827 ops/ms
+# Warmup Iteration   3: 450.067 ops/ms
+Iteration   1: 450.227 ops/ms
+Iteration   2: 452.990 ops/ms
+Iteration   3: 454.309 ops/ms
+Iteration   4: 451.154 ops/ms
+Iteration   5: 451.179 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag":
+  451.972 ±(99.9%) 6.339 ops/ms [Average]
+  (min, avg, max) = (450.227, 451.972, 454.309), stdev = 1.646
+  CI (99.9%): [445.633, 458.311] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag
+# Parameters: (fillRate = .70)
+
+# Run progress: 14.00% complete, ETA 00:05:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 381.893 ops/ms
+# Warmup Iteration   2: 388.542 ops/ms
+# Warmup Iteration   3: 394.036 ops/ms
+Iteration   1: 394.205 ops/ms
+Iteration   2: 393.869 ops/ms
+Iteration   3: 393.882 ops/ms
+Iteration   4: 392.182 ops/ms
+Iteration   5: 391.682 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag":
+  393.164 ±(99.9%) 4.414 ops/ms [Average]
+  (min, avg, max) = (391.682, 393.164, 394.205), stdev = 1.146
+  CI (99.9%): [388.750, 397.578] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag
+# Parameters: (fillRate = .80)
+
+# Run progress: 16.00% complete, ETA 00:05:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 341.199 ops/ms
+# Warmup Iteration   2: 345.935 ops/ms
+# Warmup Iteration   3: 350.000 ops/ms
+Iteration   1: 346.856 ops/ms
+Iteration   2: 348.235 ops/ms
+Iteration   3: 349.566 ops/ms
+Iteration   4: 348.896 ops/ms
+Iteration   5: 349.800 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag":
+  348.671 ±(99.9%) 4.561 ops/ms [Average]
+  (min, avg, max) = (346.856, 348.671, 349.800), stdev = 1.184
+  CI (99.9%): [344.110, 353.232] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag
+# Parameters: (fillRate = .95)
+
+# Run progress: 18.00% complete, ETA 00:05:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 291.288 ops/ms
+# Warmup Iteration   2: 294.869 ops/ms
+# Warmup Iteration   3: 297.283 ops/ms
+Iteration   1: 297.860 ops/ms
+Iteration   2: 297.972 ops/ms
+Iteration   3: 297.685 ops/ms
+Iteration   4: 298.193 ops/ms
+Iteration   5: 296.825 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.artemis_foreach_intbag":
+  297.707 ±(99.9%) 2.027 ops/ms [Average]
+  (min, avg, max) = (296.825, 297.707, 298.193), stdev = 0.526
+  CI (99.9%): [295.680, 299.734] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag
+# Parameters: (fillRate = .01)
+
+# Run progress: 20.00% complete, ETA 00:05:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 4925.958 ops/ms
+# Warmup Iteration   2: 4989.631 ops/ms
+# Warmup Iteration   3: 5036.505 ops/ms
+Iteration   1: 5024.097 ops/ms
+Iteration   2: 5030.877 ops/ms
+Iteration   3: 5022.013 ops/ms
+Iteration   4: 5023.211 ops/ms
+Iteration   5: 5035.286 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag":
+  5027.097 ±(99.9%) 22.061 ops/ms [Average]
+  (min, avg, max) = (5022.013, 5027.097, 5035.286), stdev = 5.729
+  CI (99.9%): [5005.036, 5049.158] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag
+# Parameters: (fillRate = .05)
+
+# Run progress: 22.00% complete, ETA 00:05:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 1133.729 ops/ms
+# Warmup Iteration   2: 1142.615 ops/ms
+# Warmup Iteration   3: 1159.304 ops/ms
+Iteration   1: 1157.769 ops/ms
+Iteration   2: 1160.668 ops/ms
+Iteration   3: 1159.972 ops/ms
+Iteration   4: 1161.985 ops/ms
+Iteration   5: 1159.668 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag":
+  1160.013 ±(99.9%) 5.926 ops/ms [Average]
+  (min, avg, max) = (1157.769, 1160.013, 1161.985), stdev = 1.539
+  CI (99.9%): [1154.086, 1165.939] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag
+# Parameters: (fillRate = .10)
+
+# Run progress: 24.00% complete, ETA 00:05:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 561.742 ops/ms
+# Warmup Iteration   2: 578.678 ops/ms
+# Warmup Iteration   3: 583.958 ops/ms
+Iteration   1: 583.518 ops/ms
+Iteration   2: 585.188 ops/ms
+Iteration   3: 583.221 ops/ms
+Iteration   4: 584.307 ops/ms
+Iteration   5: 583.940 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag":
+  584.035 ±(99.9%) 2.947 ops/ms [Average]
+  (min, avg, max) = (583.221, 584.035, 585.188), stdev = 0.765
+  CI (99.9%): [581.088, 586.982] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag
+# Parameters: (fillRate = .20)
+
+# Run progress: 26.00% complete, ETA 00:05:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 292.112 ops/ms
+# Warmup Iteration   2: 293.134 ops/ms
+# Warmup Iteration   3: 298.394 ops/ms
+Iteration   1: 297.838 ops/ms
+Iteration   2: 296.505 ops/ms
+Iteration   3: 296.383 ops/ms
+Iteration   4: 297.670 ops/ms
+Iteration   5: 297.670 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag":
+  297.213 ±(99.9%) 2.722 ops/ms [Average]
+  (min, avg, max) = (296.383, 297.213, 297.838), stdev = 0.707
+  CI (99.9%): [294.491, 299.935] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag
+# Parameters: (fillRate = .40)
+
+# Run progress: 28.00% complete, ETA 00:04:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 149.066 ops/ms
+# Warmup Iteration   2: 152.174 ops/ms
+# Warmup Iteration   3: 151.686 ops/ms
+Iteration   1: 152.904 ops/ms
+Iteration   2: 152.787 ops/ms
+Iteration   3: 152.988 ops/ms
+Iteration   4: 152.841 ops/ms
+Iteration   5: 152.585 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag":
+  152.821 ±(99.9%) 0.585 ops/ms [Average]
+  (min, avg, max) = (152.585, 152.821, 152.988), stdev = 0.152
+  CI (99.9%): [152.237, 153.406] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag
+# Parameters: (fillRate = .50)
+
+# Run progress: 30.00% complete, ETA 00:04:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 121.871 ops/ms
+# Warmup Iteration   2: 123.972 ops/ms
+# Warmup Iteration   3: 124.790 ops/ms
+Iteration   1: 123.906 ops/ms
+Iteration   2: 124.224 ops/ms
+Iteration   3: 124.165 ops/ms
+Iteration   4: 123.981 ops/ms
+Iteration   5: 124.139 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag":
+  124.083 ±(99.9%) 0.515 ops/ms [Average]
+  (min, avg, max) = (123.906, 124.083, 124.224), stdev = 0.134
+  CI (99.9%): [123.568, 124.598] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag
+# Parameters: (fillRate = .60)
+
+# Run progress: 32.00% complete, ETA 00:04:39
+# Fork: 1 of 1
+# Warmup Iteration   1: 102.816 ops/ms
+# Warmup Iteration   2: 103.809 ops/ms
+# Warmup Iteration   3: 104.001 ops/ms
+Iteration   1: 103.962 ops/ms
+Iteration   2: 103.883 ops/ms
+Iteration   3: 103.892 ops/ms
+Iteration   4: 104.075 ops/ms
+Iteration   5: 103.733 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag":
+  103.909 ±(99.9%) 0.481 ops/ms [Average]
+  (min, avg, max) = (103.733, 103.909, 104.075), stdev = 0.125
+  CI (99.9%): [103.428, 104.390] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag
+# Parameters: (fillRate = .70)
+
+# Run progress: 34.00% complete, ETA 00:04:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 88.599 ops/ms
+# Warmup Iteration   2: 88.984 ops/ms
+# Warmup Iteration   3: 89.697 ops/ms
+Iteration   1: 89.521 ops/ms
+Iteration   2: 89.820 ops/ms
+Iteration   3: 89.695 ops/ms
+Iteration   4: 89.798 ops/ms
+Iteration   5: 89.518 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag":
+  89.670 ±(99.9%) 0.561 ops/ms [Average]
+  (min, avg, max) = (89.518, 89.670, 89.820), stdev = 0.146
+  CI (99.9%): [89.109, 90.231] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag
+# Parameters: (fillRate = .80)
+
+# Run progress: 36.00% complete, ETA 00:04:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 78.204 ops/ms
+# Warmup Iteration   2: 78.979 ops/ms
+# Warmup Iteration   3: 79.144 ops/ms
+Iteration   1: 78.820 ops/ms
+Iteration   2: 78.465 ops/ms
+Iteration   3: 78.525 ops/ms
+Iteration   4: 79.208 ops/ms
+Iteration   5: 78.769 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag":
+  78.757 ±(99.9%) 1.133 ops/ms [Average]
+  (min, avg, max) = (78.465, 78.757, 79.208), stdev = 0.294
+  CI (99.9%): [77.624, 79.891] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag
+# Parameters: (fillRate = .95)
+
+# Run progress: 38.00% complete, ETA 00:04:14
+# Fork: 1 of 1
+# Warmup Iteration   1: 66.192 ops/ms
+# Warmup Iteration   2: 67.826 ops/ms
+# Warmup Iteration   3: 66.916 ops/ms
+Iteration   1: 67.291 ops/ms
+Iteration   2: 67.397 ops/ms
+Iteration   3: 67.274 ops/ms
+Iteration   4: 67.361 ops/ms
+Iteration   5: 67.262 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitset_foreach_intbag":
+  67.317 ±(99.9%) 0.227 ops/ms [Average]
+  (min, avg, max) = (67.262, 67.317, 67.397), stdev = 0.059
+  CI (99.9%): [67.090, 67.545] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag
+# Parameters: (fillRate = .01)
+
+# Run progress: 40.00% complete, ETA 00:04:06
+# Fork: 1 of 1
+# Warmup Iteration   1: 6131.497 ops/ms
+# Warmup Iteration   2: 6522.686 ops/ms
+# Warmup Iteration   3: 7455.553 ops/ms
+Iteration   1: 7397.642 ops/ms
+Iteration   2: 7463.107 ops/ms
+Iteration   3: 7361.205 ops/ms
+Iteration   4: 7394.770 ops/ms
+Iteration   5: 7388.692 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag":
+  7401.083 ±(99.9%) 144.624 ops/ms [Average]
+  (min, avg, max) = (7361.205, 7401.083, 7463.107), stdev = 37.558
+  CI (99.9%): [7256.460, 7545.707] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag
+# Parameters: (fillRate = .05)
+
+# Run progress: 42.00% complete, ETA 00:03:58
+# Fork: 1 of 1
+# Warmup Iteration   1: 2024.448 ops/ms
+# Warmup Iteration   2: 1968.922 ops/ms
+# Warmup Iteration   3: 2449.656 ops/ms
+Iteration   1: 2467.014 ops/ms
+Iteration   2: 2454.542 ops/ms
+Iteration   3: 2454.092 ops/ms
+Iteration   4: 2493.583 ops/ms
+Iteration   5: 2459.434 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag":
+  2465.733 ±(99.9%) 63.206 ops/ms [Average]
+  (min, avg, max) = (2454.092, 2465.733, 2493.583), stdev = 16.414
+  CI (99.9%): [2402.527, 2528.939] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag
+# Parameters: (fillRate = .10)
+
+# Run progress: 44.00% complete, ETA 00:03:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 1195.568 ops/ms
+# Warmup Iteration   2: 1227.850 ops/ms
+# Warmup Iteration   3: 1368.766 ops/ms
+Iteration   1: 1356.817 ops/ms
+Iteration   2: 1346.462 ops/ms
+Iteration   3: 1372.676 ops/ms
+Iteration   4: 1335.803 ops/ms
+Iteration   5: 1349.002 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag":
+  1352.152 ±(99.9%) 52.819 ops/ms [Average]
+  (min, avg, max) = (1335.803, 1352.152, 1372.676), stdev = 13.717
+  CI (99.9%): [1299.333, 1404.971] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag
+# Parameters: (fillRate = .20)
+
+# Run progress: 46.00% complete, ETA 00:03:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 395.114 ops/ms
+# Warmup Iteration   2: 409.778 ops/ms
+# Warmup Iteration   3: 753.462 ops/ms
+Iteration   1: 755.149 ops/ms
+Iteration   2: 745.427 ops/ms
+Iteration   3: 751.885 ops/ms
+Iteration   4: 748.473 ops/ms
+Iteration   5: 753.173 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag":
+  750.821 ±(99.9%) 14.914 ops/ms [Average]
+  (min, avg, max) = (745.427, 750.821, 755.149), stdev = 3.873
+  CI (99.9%): [735.907, 765.736] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag
+# Parameters: (fillRate = .40)
+
+# Run progress: 48.00% complete, ETA 00:03:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 246.647 ops/ms
+# Warmup Iteration   2: 238.373 ops/ms
+# Warmup Iteration   3: 381.989 ops/ms
+Iteration   1: 385.331 ops/ms
+Iteration   2: 382.081 ops/ms
+Iteration   3: 384.820 ops/ms
+Iteration   4: 383.960 ops/ms
+Iteration   5: 385.503 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag":
+  384.339 ±(99.9%) 5.382 ops/ms [Average]
+  (min, avg, max) = (382.081, 384.339, 385.503), stdev = 1.398
+  CI (99.9%): [378.957, 389.721] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag
+# Parameters: (fillRate = .50)
+
+# Run progress: 50.00% complete, ETA 00:03:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 205.066 ops/ms
+# Warmup Iteration   2: 198.410 ops/ms
+# Warmup Iteration   3: 312.736 ops/ms
+Iteration   1: 309.607 ops/ms
+Iteration   2: 310.181 ops/ms
+Iteration   3: 314.008 ops/ms
+Iteration   4: 308.795 ops/ms
+Iteration   5: 310.143 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag":
+  310.547 ±(99.9%) 7.757 ops/ms [Average]
+  (min, avg, max) = (308.795, 310.547, 314.008), stdev = 2.014
+  CI (99.9%): [302.790, 318.303] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag
+# Parameters: (fillRate = .60)
+
+# Run progress: 52.00% complete, ETA 00:03:17
+# Fork: 1 of 1
+# Warmup Iteration   1: 176.845 ops/ms
+# Warmup Iteration   2: 167.027 ops/ms
+# Warmup Iteration   3: 238.007 ops/ms
+Iteration   1: 235.842 ops/ms
+Iteration   2: 235.667 ops/ms
+Iteration   3: 240.696 ops/ms
+Iteration   4: 240.426 ops/ms
+Iteration   5: 240.086 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag":
+  238.543 ±(99.9%) 9.842 ops/ms [Average]
+  (min, avg, max) = (235.667, 238.543, 240.696), stdev = 2.556
+  CI (99.9%): [228.701, 248.385] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag
+# Parameters: (fillRate = .70)
+
+# Run progress: 54.00% complete, ETA 00:03:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 159.396 ops/ms
+# Warmup Iteration   2: 148.500 ops/ms
+# Warmup Iteration   3: 209.065 ops/ms
+Iteration   1: 208.495 ops/ms
+Iteration   2: 208.179 ops/ms
+Iteration   3: 208.894 ops/ms
+Iteration   4: 209.255 ops/ms
+Iteration   5: 208.490 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag":
+  208.663 ±(99.9%) 1.607 ops/ms [Average]
+  (min, avg, max) = (208.179, 208.663, 209.255), stdev = 0.417
+  CI (99.9%): [207.055, 210.270] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag
+# Parameters: (fillRate = .80)
+
+# Run progress: 56.00% complete, ETA 00:03:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 143.224 ops/ms
+# Warmup Iteration   2: 128.159 ops/ms
+# Warmup Iteration   3: 181.283 ops/ms
+Iteration   1: 184.034 ops/ms
+Iteration   2: 183.571 ops/ms
+Iteration   3: 183.230 ops/ms
+Iteration   4: 184.551 ops/ms
+Iteration   5: 183.961 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag":
+  183.869 ±(99.9%) 1.924 ops/ms [Average]
+  (min, avg, max) = (183.230, 183.869, 184.551), stdev = 0.500
+  CI (99.9%): [181.946, 185.793] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag
+# Parameters: (fillRate = .95)
+
+# Run progress: 58.00% complete, ETA 00:02:52
+# Fork: 1 of 1
+# Warmup Iteration   1: 127.563 ops/ms
+# Warmup Iteration   2: 114.346 ops/ms
+# Warmup Iteration   3: 163.489 ops/ms
+Iteration   1: 162.116 ops/ms
+Iteration   2: 163.124 ops/ms
+Iteration   3: 162.141 ops/ms
+Iteration   4: 162.939 ops/ms
+Iteration   5: 162.265 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag":
+  162.517 ±(99.9%) 1.839 ops/ms [Average]
+  (min, avg, max) = (162.116, 162.517, 163.124), stdev = 0.477
+  CI (99.9%): [160.678, 164.356] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct
+# Parameters: (fillRate = .01)
+
+# Run progress: 60.00% complete, ETA 00:02:44
+# Fork: 1 of 1
+# Warmup Iteration   1: 6999.197 ops/ms
+# Warmup Iteration   2: 6910.617 ops/ms
+# Warmup Iteration   3: 7031.229 ops/ms
+Iteration   1: 7056.235 ops/ms
+Iteration   2: 7102.235 ops/ms
+Iteration   3: 7055.426 ops/ms
+Iteration   4: 7083.427 ops/ms
+Iteration   5: 7063.561 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct":
+  7072.177 ±(99.9%) 77.946 ops/ms [Average]
+  (min, avg, max) = (7055.426, 7072.177, 7102.235), stdev = 20.242
+  CI (99.9%): [6994.230, 7150.123] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct
+# Parameters: (fillRate = .05)
+
+# Run progress: 62.00% complete, ETA 00:02:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 2363.830 ops/ms
+# Warmup Iteration   2: 2394.505 ops/ms
+# Warmup Iteration   3: 2431.401 ops/ms
+Iteration   1: 2436.398 ops/ms
+Iteration   2: 2422.800 ops/ms
+Iteration   3: 2423.561 ops/ms
+Iteration   4: 2426.857 ops/ms
+Iteration   5: 2434.683 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct":
+  2428.860 ±(99.9%) 24.319 ops/ms [Average]
+  (min, avg, max) = (2422.800, 2428.860, 2436.398), stdev = 6.315
+  CI (99.9%): [2404.541, 2453.178] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct
+# Parameters: (fillRate = .10)
+
+# Run progress: 64.00% complete, ETA 00:02:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 1351.290 ops/ms
+# Warmup Iteration   2: 1370.912 ops/ms
+# Warmup Iteration   3: 1360.595 ops/ms
+Iteration   1: 1363.858 ops/ms
+Iteration   2: 1350.363 ops/ms
+Iteration   3: 1374.334 ops/ms
+Iteration   4: 1365.015 ops/ms
+Iteration   5: 1351.162 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct":
+  1360.947 ±(99.9%) 39.079 ops/ms [Average]
+  (min, avg, max) = (1350.363, 1360.947, 1374.334), stdev = 10.149
+  CI (99.9%): [1321.868, 1400.025] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct
+# Parameters: (fillRate = .20)
+
+# Run progress: 66.00% complete, ETA 00:02:19
+# Fork: 1 of 1
+# Warmup Iteration   1: 460.354 ops/ms
+# Warmup Iteration   2: 465.727 ops/ms
+# Warmup Iteration   3: 534.480 ops/ms
+Iteration   1: 539.838 ops/ms
+Iteration   2: 529.941 ops/ms
+Iteration   3: 532.034 ops/ms
+Iteration   4: 539.045 ops/ms
+Iteration   5: 535.641 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct":
+  535.300 ±(99.9%) 16.575 ops/ms [Average]
+  (min, avg, max) = (529.941, 535.300, 539.838), stdev = 4.305
+  CI (99.9%): [518.725, 551.875] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct
+# Parameters: (fillRate = .40)
+
+# Run progress: 68.00% complete, ETA 00:02:11
+# Fork: 1 of 1
+# Warmup Iteration   1: 225.453 ops/ms
+# Warmup Iteration   2: 206.956 ops/ms
+# Warmup Iteration   3: 146.617 ops/ms
+Iteration   1: 148.082 ops/ms
+Iteration   2: 147.954 ops/ms
+Iteration   3: 148.958 ops/ms
+Iteration   4: 148.172 ops/ms
+Iteration   5: 149.505 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct":
+  148.534 ±(99.9%) 2.579 ops/ms [Average]
+  (min, avg, max) = (147.954, 148.534, 149.505), stdev = 0.670
+  CI (99.9%): [145.956, 151.113] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct
+# Parameters: (fillRate = .50)
+
+# Run progress: 70.00% complete, ETA 00:02:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 191.526 ops/ms
+# Warmup Iteration   2: 172.477 ops/ms
+# Warmup Iteration   3: 112.409 ops/ms
+Iteration   1: 112.724 ops/ms
+Iteration   2: 111.601 ops/ms
+Iteration   3: 112.098 ops/ms
+Iteration   4: 112.117 ops/ms
+Iteration   5: 111.515 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct":
+  112.011 ±(99.9%) 1.868 ops/ms [Average]
+  (min, avg, max) = (111.515, 112.011, 112.724), stdev = 0.485
+  CI (99.9%): [110.143, 113.879] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct
+# Parameters: (fillRate = .60)
+
+# Run progress: 72.00% complete, ETA 00:01:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 168.315 ops/ms
+# Warmup Iteration   2: 149.824 ops/ms
+# Warmup Iteration   3: 94.817 ops/ms
+Iteration   1: 94.765 ops/ms
+Iteration   2: 94.941 ops/ms
+Iteration   3: 94.924 ops/ms
+Iteration   4: 94.770 ops/ms
+Iteration   5: 94.737 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct":
+  94.827 ±(99.9%) 0.373 ops/ms [Average]
+  (min, avg, max) = (94.737, 94.827, 94.941), stdev = 0.097
+  CI (99.9%): [94.454, 95.201] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct
+# Parameters: (fillRate = .70)
+
+# Run progress: 74.00% complete, ETA 00:01:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 149.096 ops/ms
+# Warmup Iteration   2: 133.607 ops/ms
+# Warmup Iteration   3: 77.187 ops/ms
+Iteration   1: 76.846 ops/ms
+Iteration   2: 77.065 ops/ms
+Iteration   3: 77.313 ops/ms
+Iteration   4: 77.101 ops/ms
+Iteration   5: 76.119 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct":
+  76.889 ±(99.9%) 1.775 ops/ms [Average]
+  (min, avg, max) = (76.119, 76.889, 77.313), stdev = 0.461
+  CI (99.9%): [75.114, 78.663] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct
+# Parameters: (fillRate = .80)
+
+# Run progress: 76.00% complete, ETA 00:01:38
+# Fork: 1 of 1
+# Warmup Iteration   1: 128.071 ops/ms
+# Warmup Iteration   2: 121.436 ops/ms
+# Warmup Iteration   3: 156.739 ops/ms
+Iteration   1: 156.839 ops/ms
+Iteration   2: 157.018 ops/ms
+Iteration   3: 155.458 ops/ms
+Iteration   4: 156.654 ops/ms
+Iteration   5: 157.045 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct":
+  156.603 ±(99.9%) 2.537 ops/ms [Average]
+  (min, avg, max) = (155.458, 156.603, 157.045), stdev = 0.659
+  CI (99.9%): [154.066, 159.139] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct
+# Parameters: (fillRate = .95)
+
+# Run progress: 78.00% complete, ETA 00:01:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 118.606 ops/ms
+# Warmup Iteration   2: 112.934 ops/ms
+# Warmup Iteration   3: 136.020 ops/ms
+Iteration   1: 134.356 ops/ms
+Iteration   2: 134.759 ops/ms
+Iteration   3: 135.917 ops/ms
+Iteration   4: 134.879 ops/ms
+Iteration   5: 134.804 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_bit_intbag_direct":
+  134.943 ±(99.9%) 2.238 ops/ms [Average]
+  (min, avg, max) = (134.356, 134.943, 135.917), stdev = 0.581
+  CI (99.9%): [132.705, 137.181] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag
+# Parameters: (fillRate = .01)
+
+# Run progress: 80.00% complete, ETA 00:01:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 2631.375 ops/ms
+# Warmup Iteration   2: 2488.857 ops/ms
+# Warmup Iteration   3: 2373.560 ops/ms
+Iteration   1: 2233.351 ops/ms
+Iteration   2: 2379.843 ops/ms
+Iteration   3: 2365.370 ops/ms
+Iteration   4: 2398.128 ops/ms
+Iteration   5: 2278.911 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag":
+  2331.121 ±(99.9%) 274.463 ops/ms [Average]
+  (min, avg, max) = (2233.351, 2331.121, 2398.128), stdev = 71.277
+  CI (99.9%): [2056.657, 2605.584] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag
+# Parameters: (fillRate = .05)
+
+# Run progress: 82.00% complete, ETA 00:01:13
+# Fork: 1 of 1
+# Warmup Iteration   1: 825.620 ops/ms
+# Warmup Iteration   2: 799.012 ops/ms
+# Warmup Iteration   3: 738.764 ops/ms
+Iteration   1: 736.436 ops/ms
+Iteration   2: 736.945 ops/ms
+Iteration   3: 732.458 ops/ms
+Iteration   4: 732.272 ops/ms
+Iteration   5: 741.185 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag":
+  735.859 ±(99.9%) 14.189 ops/ms [Average]
+  (min, avg, max) = (732.272, 735.859, 741.185), stdev = 3.685
+  CI (99.9%): [721.670, 750.048] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag
+# Parameters: (fillRate = .10)
+
+# Run progress: 84.00% complete, ETA 00:01:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 436.003 ops/ms
+# Warmup Iteration   2: 446.227 ops/ms
+# Warmup Iteration   3: 556.574 ops/ms
+Iteration   1: 557.583 ops/ms
+Iteration   2: 567.773 ops/ms
+Iteration   3: 567.569 ops/ms
+Iteration   4: 570.153 ops/ms
+Iteration   5: 560.879 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag":
+  564.791 ±(99.9%) 20.432 ops/ms [Average]
+  (min, avg, max) = (557.583, 564.791, 570.153), stdev = 5.306
+  CI (99.9%): [544.360, 585.223] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag
+# Parameters: (fillRate = .20)
+
+# Run progress: 86.00% complete, ETA 00:00:57
+# Fork: 1 of 1
+# Warmup Iteration   1: 240.730 ops/ms
+# Warmup Iteration   2: 248.941 ops/ms
+# Warmup Iteration   3: 311.881 ops/ms
+Iteration   1: 314.376 ops/ms
+Iteration   2: 313.301 ops/ms
+Iteration   3: 313.073 ops/ms
+Iteration   4: 312.547 ops/ms
+Iteration   5: 316.626 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag":
+  313.985 ±(99.9%) 6.238 ops/ms [Average]
+  (min, avg, max) = (312.547, 313.985, 316.626), stdev = 1.620
+  CI (99.9%): [307.746, 320.223] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag
+# Parameters: (fillRate = .40)
+
+# Run progress: 88.00% complete, ETA 00:00:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 116.431 ops/ms
+# Warmup Iteration   2: 114.940 ops/ms
+# Warmup Iteration   3: 88.074 ops/ms
+Iteration   1: 88.411 ops/ms
+Iteration   2: 88.500 ops/ms
+Iteration   3: 89.926 ops/ms
+Iteration   4: 89.738 ops/ms
+Iteration   5: 88.520 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag":
+  89.019 ±(99.9%) 2.873 ops/ms [Average]
+  (min, avg, max) = (88.411, 89.019, 89.926), stdev = 0.746
+  CI (99.9%): [86.146, 91.892] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag
+# Parameters: (fillRate = .50)
+
+# Run progress: 90.00% complete, ETA 00:00:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 104.584 ops/ms
+# Warmup Iteration   2: 110.198 ops/ms
+# Warmup Iteration   3: 80.284 ops/ms
+Iteration   1: 79.297 ops/ms
+Iteration   2: 80.213 ops/ms
+Iteration   3: 80.765 ops/ms
+Iteration   4: 80.721 ops/ms
+Iteration   5: 79.896 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag":
+  80.178 ±(99.9%) 2.355 ops/ms [Average]
+  (min, avg, max) = (79.297, 80.178, 80.765), stdev = 0.612
+  CI (99.9%): [77.823, 82.534] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag
+# Parameters: (fillRate = .60)
+
+# Run progress: 92.00% complete, ETA 00:00:32
+# Fork: 1 of 1
+# Warmup Iteration   1: 89.142 ops/ms
+# Warmup Iteration   2: 91.645 ops/ms
+# Warmup Iteration   3: 67.042 ops/ms
+Iteration   1: 66.819 ops/ms
+Iteration   2: 66.468 ops/ms
+Iteration   3: 66.521 ops/ms
+Iteration   4: 67.024 ops/ms
+Iteration   5: 66.565 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag":
+  66.679 ±(99.9%) 0.906 ops/ms [Average]
+  (min, avg, max) = (66.468, 66.679, 67.024), stdev = 0.235
+  CI (99.9%): [65.774, 67.585] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag
+# Parameters: (fillRate = .70)
+
+# Run progress: 94.00% complete, ETA 00:00:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 75.175 ops/ms
+# Warmup Iteration   2: 79.129 ops/ms
+# Warmup Iteration   3: 57.426 ops/ms
+Iteration   1: 56.410 ops/ms
+Iteration   2: 57.110 ops/ms
+Iteration   3: 57.148 ops/ms
+Iteration   4: 57.467 ops/ms
+Iteration   5: 57.607 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag":
+  57.149 ±(99.9%) 1.785 ops/ms [Average]
+  (min, avg, max) = (56.410, 57.149, 57.607), stdev = 0.463
+  CI (99.9%): [55.364, 58.933] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag
+# Parameters: (fillRate = .80)
+
+# Run progress: 96.00% complete, ETA 00:00:16
+# Fork: 1 of 1
+# Warmup Iteration   1: 59.260 ops/ms
+# Warmup Iteration   2: 58.477 ops/ms
+# Warmup Iteration   3: 63.473 ops/ms
+Iteration   1: 45.804 ops/ms
+Iteration   2: 45.712 ops/ms
+Iteration   3: 45.808 ops/ms
+Iteration   4: 45.793 ops/ms
+Iteration   5: 46.069 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag":
+  45.837 ±(99.9%) 0.522 ops/ms [Average]
+  (min, avg, max) = (45.712, 45.837, 46.069), stdev = 0.136
+  CI (99.9%): [45.315, 46.359] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag
+# Parameters: (fillRate = .95)
+
+# Run progress: 98.00% complete, ETA 00:00:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 57.178 ops/ms
+# Warmup Iteration   2: 61.748 ops/ms
+# Warmup Iteration   3: 66.103 ops/ms
+Iteration   1: 40.719 ops/ms
+Iteration   2: 40.520 ops/ms
+Iteration   3: 40.885 ops/ms
+Iteration   4: 41.289 ops/ms
+Iteration   5: 40.834 ops/ms
+
+
+Result "net.onedaybeard.bitvector.BitVectorBenchmark.bitvector_foreach_intbag":
+  40.849 ±(99.9%) 1.089 ops/ms [Average]
+  (min, avg, max) = (40.520, 40.849, 41.289), stdev = 0.283
+  CI (99.9%): [39.760, 41.938] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:06:51
+
+Benchmark                                               (fillRate)   Mode  Cnt     Score     Error   Units
+BitVectorBenchmark.artemis_foreach_intbag                      .01  thrpt    5  6850.205 ± 108.117  ops/ms
+BitVectorBenchmark.artemis_foreach_intbag                      .05  thrpt    5  2589.109 ±  68.334  ops/ms
+BitVectorBenchmark.artemis_foreach_intbag                      .10  thrpt    5  1877.539 ± 119.593  ops/ms
+BitVectorBenchmark.artemis_foreach_intbag                      .20  thrpt    5   944.897 ±  13.295  ops/ms
+BitVectorBenchmark.artemis_foreach_intbag                      .40  thrpt    5   665.297 ±   8.378  ops/ms
+BitVectorBenchmark.artemis_foreach_intbag                      .50  thrpt    5   542.709 ±   5.638  ops/ms
+BitVectorBenchmark.artemis_foreach_intbag                      .60  thrpt    5   451.972 ±   6.339  ops/ms
+BitVectorBenchmark.artemis_foreach_intbag                      .70  thrpt    5   393.164 ±   4.414  ops/ms
+BitVectorBenchmark.artemis_foreach_intbag                      .80  thrpt    5   348.671 ±   4.561  ops/ms
+BitVectorBenchmark.artemis_foreach_intbag                      .95  thrpt    5   297.707 ±   2.027  ops/ms
+BitVectorBenchmark.bitset_foreach_intbag                       .01  thrpt    5  5027.097 ±  22.061  ops/ms
+BitVectorBenchmark.bitset_foreach_intbag                       .05  thrpt    5  1160.013 ±   5.926  ops/ms
+BitVectorBenchmark.bitset_foreach_intbag                       .10  thrpt    5   584.035 ±   2.947  ops/ms
+BitVectorBenchmark.bitset_foreach_intbag                       .20  thrpt    5   297.213 ±   2.722  ops/ms
+BitVectorBenchmark.bitset_foreach_intbag                       .40  thrpt    5   152.821 ±   0.585  ops/ms
+BitVectorBenchmark.bitset_foreach_intbag                       .50  thrpt    5   124.083 ±   0.515  ops/ms
+BitVectorBenchmark.bitset_foreach_intbag                       .60  thrpt    5   103.909 ±   0.481  ops/ms
+BitVectorBenchmark.bitset_foreach_intbag                       .70  thrpt    5    89.670 ±   0.561  ops/ms
+BitVectorBenchmark.bitset_foreach_intbag                       .80  thrpt    5    78.757 ±   1.133  ops/ms
+BitVectorBenchmark.bitset_foreach_intbag                       .95  thrpt    5    67.317 ±   0.227  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag                .01  thrpt    5  7401.083 ± 144.624  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag                .05  thrpt    5  2465.733 ±  63.206  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag                .10  thrpt    5  1352.152 ±  52.819  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag                .20  thrpt    5   750.821 ±  14.914  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag                .40  thrpt    5   384.339 ±   5.382  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag                .50  thrpt    5   310.547 ±   7.757  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag                .60  thrpt    5   238.543 ±   9.842  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag                .70  thrpt    5   208.663 ±   1.607  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag                .80  thrpt    5   183.869 ±   1.924  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag                .95  thrpt    5   162.517 ±   1.839  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag_direct         .01  thrpt    5  7072.177 ±  77.946  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag_direct         .05  thrpt    5  2428.860 ±  24.319  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag_direct         .10  thrpt    5  1360.947 ±  39.079  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag_direct         .20  thrpt    5   535.300 ±  16.575  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag_direct         .40  thrpt    5   148.534 ±   2.579  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag_direct         .50  thrpt    5   112.011 ±   1.868  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag_direct         .60  thrpt    5    94.827 ±   0.373  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag_direct         .70  thrpt    5    76.889 ±   1.775  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag_direct         .80  thrpt    5   156.603 ±   2.537  ops/ms
+BitVectorBenchmark.bitvector_foreach_bit_intbag_direct         .95  thrpt    5   134.943 ±   2.238  ops/ms
+BitVectorBenchmark.bitvector_foreach_intbag                    .01  thrpt    5  2331.121 ± 274.463  ops/ms
+BitVectorBenchmark.bitvector_foreach_intbag                    .05  thrpt    5   735.859 ±  14.189  ops/ms
+BitVectorBenchmark.bitvector_foreach_intbag                    .10  thrpt    5   564.791 ±  20.432  ops/ms
+BitVectorBenchmark.bitvector_foreach_intbag                    .20  thrpt    5   313.985 ±   6.238  ops/ms
+BitVectorBenchmark.bitvector_foreach_intbag                    .40  thrpt    5    89.019 ±   2.873  ops/ms
+BitVectorBenchmark.bitvector_foreach_intbag                    .50  thrpt    5    80.178 ±   2.355  ops/ms
+BitVectorBenchmark.bitvector_foreach_intbag                    .60  thrpt    5    66.679 ±   0.906  ops/ms
+BitVectorBenchmark.bitvector_foreach_intbag                    .70  thrpt    5    57.149 ±   1.785  ops/ms
+BitVectorBenchmark.bitvector_foreach_intbag                    .80  thrpt    5    45.837 ±   0.522  ops/ms
+BitVectorBenchmark.bitvector_foreach_intbag                    .95  thrpt    5    40.849 ±   1.089  ops/ms
+
+Benchmark result is saved to bench4.json
