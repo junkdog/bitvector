@@ -69,7 +69,7 @@ Translating bit positions into integer, inserting each into an `IntBag` (thin wr
 
 See [jmh-logs](https://github.com/junkdog/bitvector/tree/master/jmh-logs) for the full logs.
 
-![benchmark.png](https:///raw.githubusercontent.com/junkdog/bitvector/master/benchmark.png)
+![benchmark.png](http://junkdog.github.io/images/bitvector-jmh.png)
 
 Discrepancy to artemis' `BitVector` is unwelcome. The implementation is for the most part the same, except that this implementation uses `int` for words, instead of `long`. 4 or 8 byte words did not have a significant impact on performance.
 
