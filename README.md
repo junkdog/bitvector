@@ -65,8 +65,6 @@ bitsOf(*bits).forEach { println("bit $it says hi") }
 
 ## Getting Started
 
-For multi-platform projects, `bitvector-jvm` and `bitvector-js` must be configured  
-
 #### Maven: JVM/Android
 
 ```xml
