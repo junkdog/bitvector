@@ -65,6 +65,7 @@ bitsOf(*bits).forEach { println("bit $it says hi") }
 
 ## Getting Started
 
+
 #### Maven: JVM/Android
 
 ```xml
@@ -100,7 +101,7 @@ bitsOf(*bits).forEach { println("bit $it says hi") }
 
 ## JVM Benchmarks / enumerating set bits
 
-Translating bit positions into integer, inserting each into an `IntBag` (thin wrapper around `int[]`).
+Mapping `true` bit positions into integers, inserting each into an `IntBag` (thin wrapper around `int[]`).
  
 [artemis-odb](https://github.com/junkdog/artemis-odb)'s `BitVector` was the basis for this implementation. The benchmark setup favors the artemis implementation, as it provides an optimized `toIntBag` method: it serves as a reference for best possible performance.
 

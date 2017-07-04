@@ -188,8 +188,9 @@
 	</build>
 
 	<profiles>
+		<!-- core distribution -->
 		<profile>
-			<id>default</id>
+			<id>core</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
@@ -204,6 +205,7 @@
 				<module>jvm-benchmarks</module>
 			</modules>
 		</profile>
+		<!-- useful for development -->
 		<profile>
 			<id>fulldev</id>
 			<modules>

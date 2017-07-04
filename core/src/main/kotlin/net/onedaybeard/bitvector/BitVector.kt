@@ -3,7 +3,6 @@ package net.onedaybeard.bitvector
 const val WORD_SIZE: Int = 32
 
 /**
- *
  * Performance optimized bitset implementation. Certain operations are
  * prefixed with `unsafe`; these methods perform no validation.
  */
@@ -308,6 +307,7 @@ class BitVector : Iterable<Int> {
         return true
     }
 
+    /** Returns the count of `true` bits */
     fun cardinality(): Int {
         var count = 0
         for (i in words.indices)
@@ -368,6 +368,11 @@ class BitVector : Iterable<Int> {
         }
     }
 
+    /**
+     * Enumerates over all `true` bits sequeneially. This function
+     * performs better than [forEach] and any other functions
+     * from `Iterable<Int>`.
+     */
     inline fun forEachBit(f: (Int) -> Unit): Unit {
         val w = words
         val size = w.size
