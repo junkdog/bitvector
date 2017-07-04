@@ -88,9 +88,12 @@
 						<samplesDir>${project.basedir}/src/test/kotlin</samplesDir>
 					</samplesDirs>
 					<outputFormat>html</outputFormat>
+					<sourceDirectories>
+						<sourceDirectory>${project.basedir}/../core/src/main/kotlin</sourceDirectory>
+						<sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+					</sourceDirectories>
 					<sourceLinks>
 						<link>
-							<dir>${project.basedir}/src/main/kotlin</dir>
 							<url>https://github.com/junkdog/bitvector-kotlin/blob/master/src/main/kotlin</url>
 						</link>
 					</sourceLinks>

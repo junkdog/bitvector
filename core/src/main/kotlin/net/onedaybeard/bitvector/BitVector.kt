@@ -7,20 +7,10 @@ const val WORD_SIZE: Int = 32
  * prefixed with `unsafe`; these methods perform no validation.
  */
 class BitVector : Iterable<Int> {
+    /** (can be manipulated directly) */
     var words = IntArray(1)
 
     constructor()
-
-    /**
-     * Creates a bit set whose initial size is large enough to
-     * explicitly represent bits with indices in the range 0 through
-     * `nbits - 1`.
-     *
-     * @param nbits the initial size of the bit set
-     */
-    constructor(nbits: Int) {
-        checkCapacity(nbits.toWordIdx())
-    }
 
     /** Creates a bit set based off another bit vector. */
     constructor(copyFrom: BitVector) {
