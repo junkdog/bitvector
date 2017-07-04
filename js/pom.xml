@@ -11,8 +11,11 @@
 	<packaging>jar</packaging>
 	<name>bitvector-js</name>
 
+	<properties>
+		<apidocs.path>${project.basedir}/target/dokka</apidocs.path>
+	</properties>
+
 	<dependencies>
-		<!-- core deps -->
 		<dependency>
 			<groupId>org.jetbrains.kotlin</groupId>
 			<artifactId>kotlin-stdlib-js</artifactId>
@@ -57,7 +60,6 @@
 						<phase>test-compile</phase>
 						<configuration>
 							<includeScope>test</includeScope>
-							<!--<excludeArtifactIds>kotlinx-html-common</excludeArtifactIds>-->
 							<includeTypes>jar</includeTypes>
 							<outputDirectory>${project.basedir}/target/test-classes/lib</outputDirectory>
 							<includes>*.js</includes>
@@ -105,13 +107,43 @@
 								<configuration>
 									<sourceDirs>
 										<sourceDir>${project.basedir}/../core/src/test/kotlin</sourceDir>
-										<!--<sourceDir>src/test/kotlin</sourceDir>-->
 									</sourceDirs>
 								</configuration>
 							</execution>
 						</executions>
 						<configuration>
 							<sourceMap>true</sourceMap>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.jetbrains.dokka</groupId>
+						<artifactId>dokka-maven-plugin</artifactId>
+						<version>${dokka.plugin.version}</version>
+						<executions>
+							<execution>
+								<phase>prepare-package</phase>
+								<goals>
+									<goal>javadocJar</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<moduleName>${project.artifactId}-${project.version}</moduleName>
+							<outputDir>${apidocs.path}</outputDir>
+							<samplesDirs>
+								<samplesDir>${project.basedir}/src/test/kotlin</samplesDir>
+							</samplesDirs>
+							<outputFormat>html</outputFormat>
+							<sourceDirectories>
+								<sourceDirectory>${project.basedir}/../core/src/main/kotlin</sourceDirectory>
+								<sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+							</sourceDirectories>
+							<sourceLinks>
+								<link>
+									<url>https://github.com/junkdog/bitvector-kotlin/blob/master/src/main/kotlin</url>
+								</link>
+							</sourceLinks>
+							<skip>${dokka.skip}</skip>
 						</configuration>
 					</plugin>
 				</plugins>

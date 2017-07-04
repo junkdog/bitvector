@@ -11,7 +11,6 @@
 	<packaging>jar</packaging>
 	<name>bitvector-jvm</name>
 
-
 	<properties>
 		<apidocs.path>${project.basedir}/target/dokka</apidocs.path>
 	</properties>
