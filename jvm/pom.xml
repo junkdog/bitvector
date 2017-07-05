@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>net.onedaybeard.bitvector</groupId>
 		<artifactId>bitvector-parent</artifactId>
-		<version>0.1.2</version>
+		<version>0.1.3-SNAPSHOT</version>
 	</parent>
 	<artifactId>bitvector-jvm</artifactId>
 	<packaging>jar</packaging>
