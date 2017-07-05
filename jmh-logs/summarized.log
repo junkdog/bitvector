@@ -1,0 +1,44 @@
+Benchmark                            (fillRate)   Mode  Cnt     Score     Error   Units
+bitvector_foreach_bit_intbag                .01  thrpt    5  7401.083 ± 144.624  ops/ms
+bitvector_foreach_bit_intbag                .05  thrpt    5  2465.733 ±  63.206  ops/ms
+bitvector_foreach_bit_intbag                .10  thrpt    5  1352.152 ±  52.819  ops/ms
+bitvector_foreach_bit_intbag                .20  thrpt    5   750.821 ±  14.914  ops/ms
+bitvector_foreach_bit_intbag                .40  thrpt    5   384.339 ±   5.382  ops/ms
+bitvector_foreach_bit_intbag                .50  thrpt    5   310.547 ±   7.757  ops/ms
+bitvector_foreach_bit_intbag                .60  thrpt    5   238.543 ±   9.842  ops/ms
+bitvector_foreach_bit_intbag                .70  thrpt    5   208.663 ±   1.607  ops/ms
+bitvector_foreach_bit_intbag                .80  thrpt    5   183.869 ±   1.924  ops/ms
+bitvector_foreach_bit_intbag                .95  thrpt    5   162.517 ±   1.839  ops/ms
+
+bitvector_foreach_intbag                    .01  thrpt    5  2331.121 ± 274.463  ops/ms
+bitvector_foreach_intbag                    .05  thrpt    5   735.859 ±  14.189  ops/ms
+bitvector_foreach_intbag                    .10  thrpt    5   564.791 ±  20.432  ops/ms
+bitvector_foreach_intbag                    .20  thrpt    5   313.985 ±   6.238  ops/ms
+bitvector_foreach_intbag                    .40  thrpt    5    89.019 ±   2.873  ops/ms
+bitvector_foreach_intbag                    .50  thrpt    5    80.178 ±   2.355  ops/ms
+bitvector_foreach_intbag                    .60  thrpt    5    66.679 ±   0.906  ops/ms
+bitvector_foreach_intbag                    .70  thrpt    5    57.149 ±   1.785  ops/ms
+bitvector_foreach_intbag                    .80  thrpt    5    45.837 ±   0.522  ops/ms
+bitvector_foreach_intbag                    .95  thrpt    5    40.849 ±   1.089  ops/ms
+
+bitset_foreach_intbag                       .01  thrpt    5  5027.097 ±  22.061  ops/ms
+bitset_foreach_intbag                       .05  thrpt    5  1160.013 ±   5.926  ops/ms
+bitset_foreach_intbag                       .10  thrpt    5   584.035 ±   2.947  ops/ms
+bitset_foreach_intbag                       .20  thrpt    5   297.213 ±   2.722  ops/ms
+bitset_foreach_intbag                       .40  thrpt    5   152.821 ±   0.585  ops/ms
+bitset_foreach_intbag                       .50  thrpt    5   124.083 ±   0.515  ops/ms
+bitset_foreach_intbag                       .60  thrpt    5   103.909 ±   0.481  ops/ms
+bitset_foreach_intbag                       .70  thrpt    5    89.670 ±   0.561  ops/ms
+bitset_foreach_intbag                       .80  thrpt    5    78.757 ±   1.133  ops/ms
+bitset_foreach_intbag                       .95  thrpt    5    67.317 ±   0.227  ops/ms
+
+artemis_foreach_intbag                      .01  thrpt    5  6850.205 ± 108.117  ops/ms
+artemis_foreach_intbag                      .05  thrpt    5  2589.109 ±  68.334  ops/ms
+artemis_foreach_intbag                      .10  thrpt    5  1877.539 ± 119.593  ops/ms
+artemis_foreach_intbag                      .20  thrpt    5   944.897 ±  13.295  ops/ms
+artemis_foreach_intbag                      .40  thrpt    5   665.297 ±   8.378  ops/ms
+artemis_foreach_intbag                      .50  thrpt    5   542.709 ±   5.638  ops/ms
+artemis_foreach_intbag                      .60  thrpt    5   451.972 ±   6.339  ops/ms
+artemis_foreach_intbag                      .70  thrpt    5   393.164 ±   4.414  ops/ms
+artemis_foreach_intbag                      .80  thrpt    5   348.671 ±   4.561  ops/ms
+artemis_foreach_intbag                      .95  thrpt    5   297.707 ±   2.027  ops/ms
