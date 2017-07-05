@@ -50,7 +50,6 @@
 								<sourceDir>src/main/kotlin</sourceDir>
 							</sourceDirs>
 						</configuration>
-
 					</execution>
 					<execution>
 						<id>test-compile</id>
@@ -101,4 +100,33 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<profiles>
+		<profile>
+			<id>release</id>
+			<build>
+				<plugins>
+					<!-- marking sources for maven-source-plugin:jar -->
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>build-helper-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>add-source</goal>
+								</goals>
+								<configuration>
+									<sources>
+										<source>${project.basedir}/../core/src/main/kotlin</source>
+										<source>${project.basedir}/src/main/kotlin</source>
+									</sources>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
