@@ -225,6 +225,10 @@
 			<properties>
 				<dokka.skip>false</dokka.skip>
 			</properties>
+			<modules>
+				<module>jvm</module>
+				<module>js</module>
+			</modules>
 			<build>
 				<plugins>
 					<plugin>
