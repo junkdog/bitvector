@@ -250,7 +250,7 @@
 								<id>attach-sources</id>
 								<phase>generate-resources</phase>
 								<goals>
-									<goal>jar-no-fork</goal>
+									<goal>jar</goal>
 								</goals>
 							</execution>
 						</executions>
