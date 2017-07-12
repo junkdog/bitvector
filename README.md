@@ -71,7 +71,7 @@ bitsOf(*bits).forEach { println("bit $it says hi") }
 <dependency>
 	<groupId>net.onedaybeard.bitvector</groupId>
 	<artifactId>bitvector-jvm</artifactId>
-	<version>0.1.3</version>
+	<version>0.1.4</version>
 </dependency>
 ```
 
@@ -81,20 +81,20 @@ bitsOf(*bits).forEach { println("bit $it says hi") }
 <dependency>
 	<groupId>net.onedaybeard.bitvector</groupId>
 	<artifactId>bitvector-js</artifactId>
-	<version>0.1.3</version>
+	<version>0.1.4</version>
 </dependency>
 ```
 
 #### Gradle: JVM/Android
 
 ```groovy
-  dependencies { compile "net.onedaybeard.bitvector:bitvector-jvm:0.1.3" }
+  dependencies { compile "net.onedaybeard.bitvector:bitvector-jvm:0.1.4" }
 ```
 
 #### Gradle: JavaScript
 
 ```groovy
-  dependencies { compile "net.onedaybeard.bitvector:bitvector-js:0.1.3" }
+  dependencies { compile "net.onedaybeard.bitvector:bitvector-js:0.1.4" }
 ```
 
 
